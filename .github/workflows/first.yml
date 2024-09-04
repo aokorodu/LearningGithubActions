@@ -37,3 +37,13 @@ jobs:
         run: echo here we go
       - name: second job second step
         run: echo again
+
+  thirdJob:
+    name: the third job
+    steps:
+        - name: checkout
+          uses: actions/checkout@v2
+        - run: |
+              npm ci
+              npm run build
+              npm run lint
