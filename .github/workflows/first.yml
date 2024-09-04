@@ -31,11 +31,12 @@ jobs:
       - name: Run a one-line script
         run: echo this is the first job second step!
 
-  otherjob:
-    name: the other job
+  secondJob:
+    name: the second job
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: other job first step
+      - name: second job first step
         run: echo here we go
-      - name: other job second step
+      - name: second job second step
         run: echo again
