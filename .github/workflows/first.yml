@@ -44,4 +44,8 @@ jobs:
     steps:
         - name: checkout
           uses: actions/checkout@v2
-        - run: npm run lint
+        - run: |
+              npm ci
+              npm run build
+              npm run test:unit
+              npm run lint
