@@ -41,11 +41,9 @@ jobs:
       - name: second job second step
         run: echo again
 
-  thirdJob:
-    name: the third job
-    needs: secondJob
-    runs-on: ubuntu-latest
-    steps:
-      - name: second job first step
-        run: echo here we go
-
+test:
+    strategy:
+      matrix:
+        test-scripts:
+        - npm run lint
+        - npm run test
