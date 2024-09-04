@@ -40,7 +40,6 @@ jobs:
 
   thirdJob:
     name: the third job
-    runs-on: ubuntu-latest
     steps:
        - name: checkout
         uses: actions/checkout@v4
