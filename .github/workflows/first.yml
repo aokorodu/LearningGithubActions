@@ -37,11 +37,3 @@ jobs:
         run: echo here we go
       - name: second job second step
         run: echo again
-
-  thirdJob:
-    name: the third job
-    steps:
-       - name: checkout
-        uses: actions/checkout@v4
-      - name: run lint
-        run: npm run lint
