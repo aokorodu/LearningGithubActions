@@ -39,7 +39,7 @@ jobs:
         run: echo again
 
   thirdJob:
-    name: the second job
+    name: the third job
     needs: secondJob
     runs-on: ubuntu-latest
     steps:
