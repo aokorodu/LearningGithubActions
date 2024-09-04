@@ -40,7 +40,6 @@ jobs:
 
   thirdJob:
     name: the third job
-    needs: secondJob
     runs-on: ubuntu-latest
     steps:
        - name: checkout
