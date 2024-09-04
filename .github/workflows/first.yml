@@ -37,3 +37,13 @@ jobs:
         run: echo here we go
       - name: second job second step
         run: echo again
+
+  thirdJob:
+    name: the second job
+    needs: secondJob
+    runs-on: ubuntu-latest
+    steps:
+       - name: checkout
+        uses: actions/checkout@v4
+      - name: run lint
+        run: npm run lint
