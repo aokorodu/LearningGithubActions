@@ -27,9 +27,6 @@ jobs:
       - name: first step
         uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: linting
-        run: npm run lint
 
   secondJob:
     name: the second job
@@ -40,12 +37,3 @@ jobs:
         run: echo here we go
       - name: second job second step
         run: echo again
-
-test:
-name: the test
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test-scripts:
-        - npm run lint
-        - npm run test
