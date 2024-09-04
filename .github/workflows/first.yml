@@ -42,6 +42,8 @@ jobs:
         run: echo again
 
 test:
+name: the test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         test-scripts:
