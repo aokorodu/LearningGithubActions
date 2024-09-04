@@ -29,7 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo this is the first job second step!
+        run: npm run lint
 
   secondJob:
     name: the second job
